@@ -28,10 +28,10 @@
         >
           <a
             href="/"
-            class="inline-flex items-center sm:mr-8 items-end font-sans text-2xl font-extrabold text-left text-black no-underline bg-transparent cursor-pointer group focus:no-underline"
+            class="inline-flex sm:mr-8 items-end font-sans text-2xl font-extrabold text-left text-black no-underline bg-transparent cursor-pointer group focus:no-underline"
           >
           <svg xmlns="http://www.w3.org/2000/svg" data-testid="geist-icon" stroke-linejoin="round" style="width:23px;height:25px;color:var(--ds-gray-1000)" viewBox="0 0 16 16" aria-label="Vercel logo"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 1L16 15H0L8 1Z" fill="currentColor"></path></svg>
-    <!-- <span class="ml-3 text-lg font-medium">Full stack cohort</span> -->
+
           </a>
           <nav
             class="items-center hidden space-x-5 text-sm font-medium lg:flex"
@@ -44,10 +44,7 @@
         <div class="relative">
           <div x-data="{ dropdownOpen: false }" class="relative">
             <div class="flex items-center">
-              <!-- <a href="" class="btn text-sm text-black bg-neutral-100 px-4 rounded-lg py-2">Back to dashboard</a> -->
-              <a href="" class="btn text-sm text-black bg-neutral-100 px-4 rounded-lg py-2">Course Content</a>
-
-                <button
+              <button
               :class="{ 'hover:bg-white' : !dropdownOpen, 'bg-white' : dropdownOpen }"
               @click="dropdownOpen=true"
               class="inline-flex items-center justify-center h-12 py-2 pl-3 pr-0 text-sm font-medium transition-colors bg-white border-0 rounded-md text-neutral-700 focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
@@ -164,22 +161,62 @@
       </div>
     </header>
 
-    <!-- player -->
-    <main class=" flex gap-4 justify-center align-middle py-12 ">
-      <!-- <div class="sm:w-[370px] bg-violet bg-neutral-50 h-screen fixed top-0 left-0 self-start" >
-        fjdkjfdk
-      </div> -->
-      <div class="2xl:px-0 max-w-6xl mt-16 ml-[370p">
-        <div class="sm:w-[740px] px-4 md:px-0">
-            <div style="position:relative;padding-top:56.25%;"><iframe src="https://iframe.mediadelivery.net/embed/200867/ccbb79fa-76a0-47ee-88d1-00c545f43e74?autoplay=true&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
-            <div class="mt-8">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde possimus voluptate tenetur laboriosam omnis voluptatibus.</p>
-              </div>
-        </div>
+    <!-- Dashboard  -->
+    <main
+      class="mt-32 flex flex-col justify-center align-middle px-6 py-12 lg:px-8"
+    >
+      <div class="sm:mx-auto sm:w-full sm:max-w-sm text-center">
+        <img src="./fsd.svg" class="h-12 inline-block mb-4" alt="">
+        <h2 class="text-2xl font-bold leading-9 tracking-tight text-gray-900">
+          Upgrade to VIP</h2>
+          <p class="text-gray-700">Get javascript crash course and gain one year access to content updates and recordings! Get all of this for just Rs 249/-.  </p>
       </div>
-      
-    </main>
 
-    
+      <div class="mt-2 sm:mx-auto sm:w-full sm:max-w-sm">
+        
+        <div class="relative w-full mt-2 content">
+          <!-- Tab Content 1 - Replace with your content -->
+          <div class="bg-card text-neutral-900 mt-5">
+            <div class="pt-0 space-y-2 hidde">
+              <div class="space-y-1">
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  for="name"
+                  >Registered Email id</label
+                ><input
+                  type="text"
+                  placeholder="youremail@gmail.com"
+                  id="name"
+                  
+                  class="flex w-full h-10 px-3 py-7 text-sm bg-white border rounded-xl peer border-neutral-300 ring-offset-background placeholder:text-neutral-400 focus:border-neutral-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-400 disabled:cursor-not-allowed disabled:opacity-50"
+                />
+              </div>
+              
+            </div>
+            <div class="flex items-center justify-center pt-0 mt-3">
+              <button
+                type="button"
+                class="inline-flex items-center justify-center w-full px-4 py-5 text-sm font-normal tracking-wide text-white transition-colors duration-200 rounded-xl bg-neutral-950 hover:bg-neutral-900 focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900 focus:shadow-outline focus:outline-none"
+              >
+                Upgrade to VIP Now at Rs 249
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+        </main>
+
+    <!-- Footer Section -->
+    <section class="bg-white">
+      <div
+        class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"
+      >
+        
+        
+        <p class="mt-8 text-base leading-6 text-center text-gray-400">
+          &copy; 2024 Codekaro All rights reserved.
+        </p>
+      </div>
+    </section>
   </body>
 </html>
